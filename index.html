@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chart Js weather</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!-- navbar -->
+  <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <div class="navbar-brand" href="#">MundoClima</div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Escribenos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- header -->
+  <header>
+    <div class="header-container">
+      <div class="image">
+        <h1><b>CONOCE UN PAÍS CON DIVERSIDAD CLIMÁTICA</b></h1>
+      </div>
+    </div>
+  </header>
+  <br><br>
+    <!-- mainn -->
+  <article>
+    <div>
+        <h3><b>El clima de Chile</b></h3><br>
+        <p style="line-height: 30px;">
+          Chile es un país que debido a su morfología presenta una gran variedad de climas a lo largo de su territorio. Es así
+          como podemos encontrar que en la zona norte predomina el clima DESERTICO y SEMIARIDO, mientras que en la zona centro
+          el clima es mayormente MEDITERRANEO, hasta llegar a la zona sur, donde encontramos el clima TEMPLADO OCEÁNICO
+          y ESTEPARIO aún mas al sur. Esta gran variedad de ambientes naturales, junto a otros factores, hacen de Chile, una buena opción para vivir.
+        <br>
+        <br>
+      </p>
+  </div>
+  <div>
+    <h3><b>Un país para vivir</b></h3><br>
+    <p style="line-height: 30px;">
+      El año 2020, la consultora Visión Humana hizo un ranking de las 10 mejores ciudades de Chile para vivir. 
+      Para realizarlo, se evaluaron múltiples atributos como clima agradable, seguridad ciudadana, medio ambiente, 
+      sin contaminación, gente amable, bonitas construcciones y lugares públicos, entre otros. <br>
+      A continuación se presenta un gráfico donde se muestra la temperatura actual de estas 10 ciudades, ordenadas de norte
+      a sur. Se puede observar que generalmente las temperaturas son mas altas en las ciudades del norte, mas estables en el centro
+      y mas bajas en la zona sur. Esto, entre otros factores, es lo que produce la DIVERSIDAD CLIMATICA de CHILE.
+  </p>
+</div>
+</article>
+
+<br><br>
+
+  <div class="date-container pt-2 pb-1">
+    <h2><i><b>TEMPERATURA ACTUAL 10 CIUDADES</b></i></h2>
+    <p id="date-now"></p>
+  </div>
+  <section class="chart-container pb-4">
+    <div class="chart-div">
+      <canvas id="myChart" style="width: 80vw; height: 70vh;"></canvas>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center pt-3 pb-5">
+        <div class="col">
+          <p class="text-white"><i>Copyright © 2023 MundoClima</i></p>
+        </div>
+        <div class="col">
+          <a class="text-white me-2" href="">Acerca de</a>
+          <a class="text-white me-2" href="">Política de privacidad</a>
+          <a class="text-white me-2" href="">Política de cookies</a>
+          <a class="text-white" href="">Mapa del sitio</a>
+        </div>
+      <i class="bi bi-instagram text-white"></i> 
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="main.js" type="module"></script>
+  <script src="api.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>

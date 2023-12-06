@@ -1,0 +1,99 @@
+/****************** estilos generales *******************/
+
+/*titles faustina*/
+/*body: */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    background-color: rgb(233, 233, 233);
+    font-family: 'Open Sans', sans-serif;
+   /* font-family:Arial, Helvetica, sans-serif */
+}
+
+h2 {
+    font-family: 'Faustina', serif;
+    text-align: center;
+    color: rgb(65, 65, 65);
+}
+
+h1 {
+    font-family: 'Faustina', serif;
+    color:aliceblue;
+    text-align: center;
+}
+
+article {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+a {
+    text-decoration: none;
+} 
+
+/****************** header *******************/
+
+.header-container {
+    height: 55vh;
+    background-image: url(./turismo.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.image {
+    height: inherit;
+    background-color:rgba(58, 97, 189, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#date-now {
+    text-align: center;
+}
+
+.date-container {
+    background-color: #f9ebd1;
+}
+
+
+/****************** chart *******************/
+.chart-container {
+    background-color: whitesmoke;
+    height: 30rem;
+    display: flex;
+   justify-content: center;
+}
+
+.chart-div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+
+/****************** footer *******************/
+
+footer {
+    background-color: rgb(59, 57, 57); 
+}
+
+a:hover {
+    color: lightblue !important;
+  }
+
+
+
+/************ BOOSTRAP RESET **********/
